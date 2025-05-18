@@ -364,7 +364,7 @@ p {
   transform: translatey(100%);
   transition: transform 250ms ease-in-out;
 }
-.overlay p {
+.overlay > p {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
