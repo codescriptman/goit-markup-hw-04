@@ -93,6 +93,9 @@ p {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.menu-links-studio {
+  padding-bottom: 20px;
+}
 .menu-links:hover {
   color: #404bbf;
 }
@@ -105,9 +108,11 @@ p {
 .menu-studio {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .menu-studio::after {
-  width: 48px;
+  width: 100%;
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
@@ -343,6 +348,31 @@ p {
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background-color: #fff;
 }
+.portfolio-card-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translatey(100%);
+  transition: transform 250ms ease-in-out;
+}
+.overlay p {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
+.portfolio-list-item:hover .overlay {
+  transform: translatey(0);
+}
+
 .portfolio-card-text {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
