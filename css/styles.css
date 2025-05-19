@@ -167,6 +167,7 @@ p {
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
+  margin: 0 auto;
 }
 
 .hero-title {
